@@ -1,0 +1,59 @@
+
+main.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+10000000 <PUT32-0x10>:
+10000000:	4802      	ldr	r0, [pc, #8]	; (1000000c <PUT32-0x4>)
+10000002:	4685      	mov	sp, r0
+10000004:	f000 f80a 	bl	1000001c <blink>
+10000008:	e7fe      	b.n	10000008 <PUT32-0x8>
+1000000a:	10000000 	andne	r0, r0, r0
+1000000e:	 	ldrbmi	r2, [r0, -r0]!
+
+10000010 <PUT32>:
+10000010:	4770      	bx	lr
+10000012:	46c0      	nop			; (mov r8, r8)
+
+10000014 <GET32>:
+10000014:	4770      	bx	lr
+10000016:	46c0      	nop			; (mov r8, r8)
+
+10000018 <DELAY>:
+10000018:	4770      	bx	lr
+1000001a:	46c0      	nop			; (mov r8, r8)
+
+1000001c <blink>:
+1000001c:	e7fe      	b.n	1000001c <blink>
+1000001e:	46c0      	nop			; (mov r8, r8)
+
+Disassembly of section .ARM.attributes:
+
+00000000 <.ARM.attributes>:
+   0:	00002c41 	andeq	r2, r0, r1, asr #24
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000022 	andeq	r0, r0, r2, lsr #32
+  10:	726f4305 	rsbvc	r4, pc, #335544320	; 0x14000000
+  14:	2d786574 	cfldr64cs	mvdx6, [r8, #-464]!	; 0xfffffe30
+  18:	0600304d 	streq	r3, [r0], -sp, asr #32
+  1c:	094d070c 	stmdbeq	sp, {r2, r3, r8, r9, sl}^
+  20:	14041201 	strne	r1, [r4], #-513	; 0xfffffdff
+  24:	17011501 	strne	r1, [r1, -r1, lsl #10]
+  28:	1a011803 	bne	4603c <PUT32-0xffb9fd4>
+  2c:	Address 0x000000000000002c is out of bounds.
+
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	3a434347 	bcc	10d0d24 <PUT32-0xef2f2ec>
+   4:	72412820 	subvc	r2, r1, #32, 16	; 0x200000
+   8:	52206863 	eorpl	r6, r0, #6488064	; 0x630000
+   c:	736f7065 	cmnvc	pc, #101	; 0x65
+  10:	726f7469 	rsbvc	r7, pc, #1761607680	; 0x69000000
+  14:	31202979 			; <UNDEFINED> instruction: 0x31202979
+  18:	2e322e32 	mrccs	14, 1, r2, cr2, cr2, {1}
+  1c:	Address 0x000000000000001c is out of bounds.
+
