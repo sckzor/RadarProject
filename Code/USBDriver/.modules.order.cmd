@@ -1,0 +1,1 @@
+cmd_/home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/modules.order := {   echo /home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/radar_usb_devdrv.ko; :; } | awk '!x[$$0]++' - > /home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/modules.order

@@ -1,0 +1,1 @@
+cmd_/home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/radar_usb_devdrv.mod := printf '%s\n'   radar_usb_devdrv.o | awk '!x[$$0]++ { print("/home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/"$$0) }' > /home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/radar_usb_devdrv.mod

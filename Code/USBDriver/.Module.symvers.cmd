@@ -1,0 +1,1 @@
+cmd_/home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/Module.symvers := sed 's/ko$$/o/' /home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/modules.order | scripts/mod/modpost  -a  -o /home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/Module.symvers -e -i Module.symvers  -N -T -
