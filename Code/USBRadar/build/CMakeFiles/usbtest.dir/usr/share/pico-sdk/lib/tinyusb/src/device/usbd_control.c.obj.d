@@ -77,6 +77,7 @@ CMakeFiles/usbtest.dir/usr/share/pico-sdk/lib/tinyusb/src/device/usbd_control.c.
  /usr/share/pico-sdk/lib/tinyusb/src/osal/osal.h \
  /usr/share/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
  /usr/share/pico-sdk/lib/tinyusb/src/device/usbd.h \
+ /usr/share/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h \
  /usr/share/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h \
  /usr/share/pico-sdk/lib/tinyusb/src/device/dcd.h \
  /usr/share/pico-sdk/lib/tinyusb/src/device/dcd_attr.h

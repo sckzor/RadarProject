@@ -1023,6 +1023,8 @@ deps_/home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/radar_usb_devdrv.o :
   include/uapi/linux/quota.h \
   include/linux/nfs_fs_i.h \
   include/linux/pm_runtime.h \
+  include/linux/proc_fs.h \
+    $(wildcard include/config/PROC_PID_ARCH_STATUS) \
 
 /home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/radar_usb_devdrv.o: $(deps_/home/sckzor/Documents/PCB/RadarProject/Code/USBDriver/radar_usb_devdrv.o)
 

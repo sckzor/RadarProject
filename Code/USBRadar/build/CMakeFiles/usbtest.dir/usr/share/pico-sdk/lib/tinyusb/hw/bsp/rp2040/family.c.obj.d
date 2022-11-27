@@ -102,4 +102,5 @@ CMakeFiles/usbtest.dir/usr/share/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  /usr/share/pico-sdk/lib/tinyusb/src/osal/osal.h \
  /usr/share/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
  /usr/share/pico-sdk/lib/tinyusb/src/device/usbd.h \
+ /usr/share/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h \
  /usr/share/pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h

@@ -17,6 +17,9 @@ add_executable(usbtest
 	usb_descriptors.c
 	)
 
+pico_enable_stdio_usb(usbtest 0)
+pico_enable_stdio_uart(usbtest 1)
+
 target_include_directories(usbtest PUBLIC
 	${CMAKE_CURRENT_LIST_DIR})
 

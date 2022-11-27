@@ -77,4 +77,5 @@ CMakeFiles/usbtest.dir/usb_descriptors.c.obj: \
  /usr/share/pico-sdk/lib/tinyusb/src/osal/osal.h \
  /usr/share/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
  /usr/share/pico-sdk/lib/tinyusb/src/device/usbd.h \
+ /usr/share/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h \
  /home/sckzor/Documents/PCB/RadarProject/Code/USBRadar/usb_descriptors.h
